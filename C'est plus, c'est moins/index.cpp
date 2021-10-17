@@ -1,4 +1,4 @@
-int a, b=-1, n= 0;
+int a, b =- 1, n = 0;
 
 void setup() {
 
@@ -12,13 +12,13 @@ void loop() {
   while(a != b) {
 
     b = lirenombre("Saisir un nombre : ");
-    n = n+1;
-    if (b???a) Serial.println(" Trop grand");
-    if (b???a) Serial.println(" Trop petit");
+    n = n + 1;
+    if (b > a) Serial.println(" Trop grand");
+    if (b < a) Serial.println(" Trop petit");
 
   }
 
-  Serial.print(" Gagne en ");
+  Serial.print("Gagne en ");
   Serial.print(n);
   Serial.println(" coups");
   while(1);
