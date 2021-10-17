@@ -12,7 +12,7 @@ void loop() {
   while(a != b) {
 
     b = lirenombre("Saisir un nombre : ");
-    n = ???;
+    n = n+1;
     if (b???a) Serial.println(" Trop grand");
     if (b???a) Serial.println(" Trop petit");
 
