@@ -8,3 +8,7 @@
 # Amélioration
 
 Pour aller plus loin vous pouriez essayer d'implémenter une condition dans laquelle si n est supérieur à 10, alors le joueur a perdu.
+
+<hr />
+
+<span>- DoctorPok</span>
