@@ -1,7 +1,7 @@
 #include <Servo.h>
 
 Servo barriere;
-int bp = 2; // Le bouton qui fait office de badge
+int bp = 2; // Le bouton qui remplace le lecteur de badge
 int LDR = A0;
 const int ouvre=90;
 const int ferme=0;
