@@ -1,21 +1,18 @@
 int a, b =- 1, n = 0;
 
 void setup() {
-
   randomSeed(analogRead(A0));
   a = random(0, 100); // nombre aléatoire entre 0 et 100
   Serial.begin(9600);
 }
 
 void loop() {
-
   while(a != b) {
-
+    
     b = lirenombre("Saisir un nombre : ");
     n = n + 1;
     if (b > a) Serial.println(" Trop grand");
     if (b < a) Serial.println(" Trop petit");
-
   }
 
   Serial.print("Gagne en ");
@@ -26,7 +23,6 @@ void loop() {
 
 // La fonction ci-dessous permet de lire un nombre via le moniteur série
 int lirenombre(String message) {
-
   String saisie = "";
   Serial.print(message);
   while (Serial.available() == 0);
