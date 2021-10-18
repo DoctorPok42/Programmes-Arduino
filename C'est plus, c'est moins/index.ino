@@ -7,8 +7,8 @@ void setup() {
 }
 
 void loop() {
-  while(a != b) {
-    
+  while(a != b) { // Tant que a différent de b
+
     b = lirenombre("Saisir un nombre : ");
     n = n + 1;
     if (b > a) Serial.println(" Trop grand");
