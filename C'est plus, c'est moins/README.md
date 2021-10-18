@@ -7,4 +7,4 @@
 
 # Amélioration
 
-Pour aller plus loin vous pouriez essayer d'implémenter une condition dans le `void loop` qui ferait que si n est supérieur à 10 le joueur a perdu.
+Pour aller plus loin vous pouriez essayer d'implémenter une condition dans laquelle si n est supérieur à 10, alors le joueur a perdu.
