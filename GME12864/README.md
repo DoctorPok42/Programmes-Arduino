@@ -2,10 +2,12 @@
 
 ### Utiliser l'ecran GME12864 avec Arduino :
 
-C'est un petit ecran OLED de 128x64 pixels.
+C'est un petit ecran OLED de 128x64 pixels programmable avec Arduino.
 
 Montage :
 
+
+<img src="https://github.com/DoctorPok42/Programmes-Arduino/blob/main/GME12864/img.jpg" />
 
 Libraries :
   - SSD1306
@@ -16,7 +18,7 @@ Libraries :
 # Amélioration
 Vous pouvez coupler l'ecran avec par exemple une sonde de température et afficher les relevés sur l'ecran.
 
-Pour aller plus loin : [https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/](https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/)
+Pour aller plus loin / Inspiration : [https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/](https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/)
 <hr />
 
 <span>- DoctorPok</span>
