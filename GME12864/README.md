@@ -16,7 +16,7 @@ Libraries :
 <hr />
 
 # Amélioration
-Vous pouvez coupler l'ecran avec par exemple une sonde de température et afficher les relevés sur l'ecran.
+Vous pouvez coupler l'ecran avec par exemple une sonde de température et afficher les relevés sur l'ecran ou vous amusez à décodé (voir qui fait quoi) l'example.
 
 Pour aller plus loin / Inspiration : [https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/](https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/)
 <hr />
