@@ -10,23 +10,36 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 int bp1 = 2;
 int bp2 = 3;
-long val10;
+unsigned long val10;
+unsigned t = 100;
+unsigned long previousMillis = 0; // Initialisation de la variable qui servira à stocker le dernier temps
+const long interval = 100;   // Intervalle de temps entre deux mesures
 
 void setup() {
     pinMode(bp1, INPUT);
     pinMode(bp2, INPUT);
 
     Serial.begin(115200);
-
-    if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
-        Serial.println(F("SSD1306 allocation failed"));
-        for(;;);
-    }
+    
     delay(2000);
     display.clearDisplay();
 }
 
 void loop () {
+unsigned long currentMillis = millis();
+
+
+    if (currentMillis - previousMillis >= interval) {
+        previousMillis = currentMillis;
+
+        if (digitalRead(bp1) == LOW || digitalRead(bp2) == LOW && t > 0) {
+            t = t - 5;
+        }
+        else if (t < 100){
+            t = 100;
+        }
+    }
+    
     if (digitalRead(bp1) == HIGH) {
         val10 = val10 + 1;
     }
@@ -41,8 +54,9 @@ void loop () {
     display.setCursor(0, 0);
     display.println(val10);
 
-    display.setCursor(30, 0);
+    display.setTextSize(1);
+    display.setCursor(0, 30);
     display.println(val10, BIN);
     display.display();
-    delay(100);
+    delay(t);
 }
