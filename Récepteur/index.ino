@@ -10,8 +10,7 @@ bool p=true;
 long tp;
 int tm;
 
-void setup()
-{
+void setup() {
     Serial.begin(9600);
     lcd.begin(16, 2);
     lcd.setCursor(0, 0);
@@ -19,12 +18,9 @@ void setup()
     lcd.setCursor(0,0);    
 }
 
-void loop()
-{      
-    if(Serial.available())
-    {
-      if(p) 
-      {
+void loop() {      
+    if(Serial.available()) {
+      if(p) {
         tp=millis(); //mémorisation de l'instant du premier caractère reçu
         p=false;
         tm=0;
@@ -32,26 +28,26 @@ void loop()
       message+=(char)Serial.read(); 
       tm++;     
     }
-    if(!p && (millis()>tp+100)) //Si 100 ms écoulées depuis premier reçu
-    {  
-      while(1)
-      {
+
+    if(!p && (millis()>tp+100)) { //Si 100 ms écoulées depuis premier reçu
+      while(1) {
         lcd.clear();
         c=0;
         l=0;
         lcd.setCursor(c,l);
-        for (int i=0; i<tm; i++)
-        {
+
+        for (int i=0; i<tm; i++) {
           lcd.print(message[i]);
           delay(100);
           c++;
-          if(c==16)
-          {
+
+          if(c==16) {
             c=0;
             l=!l;
             lcd.setCursor(c,l);
           }
         }
+
         delay(5000);        
       }
     }      
