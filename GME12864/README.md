@@ -9,9 +9,12 @@ Montage :
 
 <img src="https://github.com/DoctorPok42/Programmes-Arduino/blob/main/GME12864/img.jpg" />
 
-Libraries :
-  - SSD1306
-  - GFX
+Lisbraries :
+  - [SSD1306](https://www.arduino.cc/reference/en/libraries/ssd1306/)
+  - [GFX](https://www.arduino.cc/reference/en/libraries/gfx-library-for-arduino/)
+
+Carte :
+- [Arduino Uno](https://www.arduino.cc/en/Main/ArduinoBoardUno)
 
 <hr />
 
