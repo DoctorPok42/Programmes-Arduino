@@ -99,6 +99,6 @@ void loop () {
   display.display();
 
   
-  // Délais de 3 secondes (pour rappel : il ne faut pas essayer de faire plus d'1 lecture toutes les 2 secondes, avec le DHT22, selon le fabricant)
-  delay(3000);
+  // Délais de 60 secondes (pour rappel : il ne faut pas essayer de faire plus d'une lecture toutes les 2 secondes, avec le DHT22, selon le fabricant)
+  delay(60000);
 }
